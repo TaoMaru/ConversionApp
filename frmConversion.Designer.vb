@@ -22,156 +22,159 @@ Partial Class frmConversion
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmConversion))
+        Me.lblHeading = New System.Windows.Forms.Label()
+        Me.picBuilding = New System.Windows.Forms.PictureBox()
+        Me.txtInput = New System.Windows.Forms.TextBox()
+        Me.lblInstructions = New System.Windows.Forms.Label()
+        Me.grpOptions = New System.Windows.Forms.GroupBox()
+        Me.radToInches = New System.Windows.Forms.RadioButton()
+        Me.radToMeters = New System.Windows.Forms.RadioButton()
+        Me.lblConversion = New System.Windows.Forms.Label()
+        Me.btnConvert = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        CType(Me.picBuilding, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.grpOptions.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblHeading
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(391, 52)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.lblHeading.AutoSize = True
+        Me.lblHeading.Location = New System.Drawing.Point(391, 52)
+        Me.lblHeading.Name = "lblHeading"
+        Me.lblHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblHeading.TabIndex = 0
+        Me.lblHeading.Text = "Label1"
         '
-        'PictureBox1
+        'picBuilding
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(49, 52)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.picBuilding.Image = CType(resources.GetObject("picBuilding.Image"), System.Drawing.Image)
+        Me.picBuilding.Location = New System.Drawing.Point(1, -2)
+        Me.picBuilding.Name = "picBuilding"
+        Me.picBuilding.Size = New System.Drawing.Size(307, 220)
+        Me.picBuilding.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picBuilding.TabIndex = 1
+        Me.picBuilding.TabStop = False
         '
-        'TextBox1
+        'txtInput
         '
-        Me.TextBox1.Location = New System.Drawing.Point(582, 102)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
-        Me.TextBox1.TabIndex = 2
+        Me.txtInput.Location = New System.Drawing.Point(582, 102)
+        Me.txtInput.Name = "txtInput"
+        Me.txtInput.Size = New System.Drawing.Size(100, 22)
+        Me.txtInput.TabIndex = 2
         '
-        'Label2
+        'lblInstructions
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(276, 102)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Label2"
+        Me.lblInstructions.AutoSize = True
+        Me.lblInstructions.Location = New System.Drawing.Point(408, 140)
+        Me.lblInstructions.Name = "lblInstructions"
+        Me.lblInstructions.Size = New System.Drawing.Size(51, 17)
+        Me.lblInstructions.TabIndex = 3
+        Me.lblInstructions.Text = "Label2"
         '
-        'GroupBox1
+        'grpOptions
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton2)
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Location = New System.Drawing.Point(394, 214)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox1.TabIndex = 4
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.grpOptions.Controls.Add(Me.radToInches)
+        Me.grpOptions.Controls.Add(Me.radToMeters)
+        Me.grpOptions.Location = New System.Drawing.Point(394, 214)
+        Me.grpOptions.Name = "grpOptions"
+        Me.grpOptions.Size = New System.Drawing.Size(200, 100)
+        Me.grpOptions.TabIndex = 4
+        Me.grpOptions.TabStop = False
+        Me.grpOptions.Text = "GroupBox1"
         '
-        'RadioButton1
+        'radToInches
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(39, 50)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radToInches.AutoSize = True
+        Me.radToInches.Location = New System.Drawing.Point(39, 62)
+        Me.radToInches.Name = "radToInches"
+        Me.radToInches.Size = New System.Drawing.Size(115, 21)
+        Me.radToInches.TabIndex = 1
+        Me.radToInches.TabStop = True
+        Me.radToInches.Text = "RadioButton2"
+        Me.radToInches.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radToMeters
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(39, 78)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(115, 21)
-        Me.RadioButton2.TabIndex = 1
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radToMeters.AutoSize = True
+        Me.radToMeters.Location = New System.Drawing.Point(39, 35)
+        Me.radToMeters.Name = "radToMeters"
+        Me.radToMeters.Size = New System.Drawing.Size(115, 21)
+        Me.radToMeters.TabIndex = 0
+        Me.radToMeters.TabStop = True
+        Me.radToMeters.Text = "RadioButton1"
+        Me.radToMeters.UseVisualStyleBackColor = True
         '
-        'Label3
+        'lblConversion
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(330, 348)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(51, 17)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Label3"
+        Me.lblConversion.AutoSize = True
+        Me.lblConversion.Location = New System.Drawing.Point(330, 348)
+        Me.lblConversion.Name = "lblConversion"
+        Me.lblConversion.Size = New System.Drawing.Size(51, 17)
+        Me.lblConversion.TabIndex = 5
+        Me.lblConversion.Text = "Label3"
         '
-        'Button1
+        'btnConvert
         '
-        Me.Button1.Location = New System.Drawing.Point(49, 392)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnConvert.Location = New System.Drawing.Point(49, 392)
+        Me.btnConvert.Name = "btnConvert"
+        Me.btnConvert.Size = New System.Drawing.Size(75, 23)
+        Me.btnConvert.TabIndex = 6
+        Me.btnConvert.Text = "Button1"
+        Me.btnConvert.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnClear
         '
-        Me.Button2.Location = New System.Drawing.Point(333, 404)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnClear.Location = New System.Drawing.Point(333, 404)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "Button2"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnExit
         '
-        Me.Button3.Location = New System.Drawing.Point(582, 404)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(582, 404)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 8
+        Me.btnExit.Text = "Button3"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'frmConversion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(820, 518)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnConvert)
+        Me.Controls.Add(Me.lblConversion)
+        Me.Controls.Add(Me.grpOptions)
+        Me.Controls.Add(Me.lblInstructions)
+        Me.Controls.Add(Me.txtInput)
+        Me.Controls.Add(Me.picBuilding)
+        Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmConversion"
-        Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.Text = "Conversion App"
+        CType(Me.picBuilding, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.grpOptions.ResumeLayout(False)
+        Me.grpOptions.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents lblHeading As Label
+    Friend WithEvents picBuilding As PictureBox
+    Friend WithEvents txtInput As TextBox
+    Friend WithEvents lblInstructions As Label
+    Friend WithEvents grpOptions As GroupBox
+    Friend WithEvents radToInches As RadioButton
+    Friend WithEvents radToMeters As RadioButton
+    Friend WithEvents lblConversion As Label
+    Friend WithEvents btnConvert As Button
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnExit As Button
 End Class
