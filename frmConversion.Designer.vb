@@ -41,11 +41,12 @@ Partial Class frmConversion
         'lblHeading
         '
         Me.lblHeading.AutoSize = True
-        Me.lblHeading.Location = New System.Drawing.Point(391, 52)
+        Me.lblHeading.Font = New System.Drawing.Font("Gentium Book Basic", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.Location = New System.Drawing.Point(439, 40)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblHeading.Size = New System.Drawing.Size(237, 40)
         Me.lblHeading.TabIndex = 0
-        Me.lblHeading.Text = "Label1"
+        Me.lblHeading.Text = "Converter App"
         '
         'picBuilding
         '
@@ -59,93 +60,108 @@ Partial Class frmConversion
         '
         'txtInput
         '
-        Me.txtInput.Location = New System.Drawing.Point(582, 102)
+        Me.txtInput.BackColor = System.Drawing.Color.Lavender
+        Me.txtInput.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtInput.Location = New System.Drawing.Point(674, 142)
         Me.txtInput.Name = "txtInput"
-        Me.txtInput.Size = New System.Drawing.Size(100, 22)
+        Me.txtInput.Size = New System.Drawing.Size(100, 30)
         Me.txtInput.TabIndex = 2
+        Me.txtInput.Text = "8888"
         '
         'lblInstructions
         '
         Me.lblInstructions.AutoSize = True
-        Me.lblInstructions.Location = New System.Drawing.Point(408, 140)
+        Me.lblInstructions.Font = New System.Drawing.Font("Gentium Book Basic", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblInstructions.Location = New System.Drawing.Point(312, 142)
         Me.lblInstructions.Name = "lblInstructions"
-        Me.lblInstructions.Size = New System.Drawing.Size(51, 17)
+        Me.lblInstructions.Size = New System.Drawing.Size(345, 28)
         Me.lblInstructions.TabIndex = 3
-        Me.lblInstructions.Text = "Label2"
+        Me.lblInstructions.Text = "Enter the area to be converted:"
         '
         'grpOptions
         '
         Me.grpOptions.Controls.Add(Me.radToInches)
         Me.grpOptions.Controls.Add(Me.radToMeters)
-        Me.grpOptions.Location = New System.Drawing.Point(394, 214)
+        Me.grpOptions.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpOptions.Location = New System.Drawing.Point(317, 197)
         Me.grpOptions.Name = "grpOptions"
-        Me.grpOptions.Size = New System.Drawing.Size(200, 100)
+        Me.grpOptions.Size = New System.Drawing.Size(420, 102)
         Me.grpOptions.TabIndex = 4
         Me.grpOptions.TabStop = False
-        Me.grpOptions.Text = "GroupBox1"
+        Me.grpOptions.Text = "Conversion Type"
         '
         'radToInches
         '
         Me.radToInches.AutoSize = True
-        Me.radToInches.Location = New System.Drawing.Point(39, 62)
+        Me.radToInches.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radToInches.Location = New System.Drawing.Point(39, 63)
         Me.radToInches.Name = "radToInches"
-        Me.radToInches.Size = New System.Drawing.Size(115, 21)
+        Me.radToInches.Size = New System.Drawing.Size(287, 28)
         Me.radToInches.TabIndex = 1
         Me.radToInches.TabStop = True
-        Me.radToInches.Text = "RadioButton2"
+        Me.radToInches.Text = "Convert Meters to Inches"
         Me.radToInches.UseVisualStyleBackColor = True
         '
         'radToMeters
         '
         Me.radToMeters.AutoSize = True
-        Me.radToMeters.Location = New System.Drawing.Point(39, 35)
+        Me.radToMeters.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radToMeters.Location = New System.Drawing.Point(39, 29)
         Me.radToMeters.Name = "radToMeters"
-        Me.radToMeters.Size = New System.Drawing.Size(115, 21)
+        Me.radToMeters.Size = New System.Drawing.Size(287, 28)
         Me.radToMeters.TabIndex = 0
         Me.radToMeters.TabStop = True
-        Me.radToMeters.Text = "RadioButton1"
+        Me.radToMeters.Text = "Convert Inches to Meters"
         Me.radToMeters.UseVisualStyleBackColor = True
         '
         'lblConversion
         '
         Me.lblConversion.AutoSize = True
-        Me.lblConversion.Location = New System.Drawing.Point(330, 348)
+        Me.lblConversion.Font = New System.Drawing.Font("Gentium Book Basic", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblConversion.Location = New System.Drawing.Point(119, 322)
         Me.lblConversion.Name = "lblConversion"
-        Me.lblConversion.Size = New System.Drawing.Size(51, 17)
+        Me.lblConversion.Size = New System.Drawing.Size(189, 28)
         Me.lblConversion.TabIndex = 5
-        Me.lblConversion.Text = "Label3"
+        Me.lblConversion.Text = "Converted area: "
         '
         'btnConvert
         '
-        Me.btnConvert.Location = New System.Drawing.Point(49, 392)
+        Me.btnConvert.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConvert.Font = New System.Drawing.Font("Arial Black", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConvert.Location = New System.Drawing.Point(65, 392)
         Me.btnConvert.Name = "btnConvert"
-        Me.btnConvert.Size = New System.Drawing.Size(75, 23)
+        Me.btnConvert.Size = New System.Drawing.Size(159, 59)
         Me.btnConvert.TabIndex = 6
-        Me.btnConvert.Text = "Button1"
+        Me.btnConvert.Text = "Convert"
         Me.btnConvert.UseVisualStyleBackColor = True
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(333, 404)
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Font = New System.Drawing.Font("Arial Black", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(331, 392)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.Size = New System.Drawing.Size(159, 59)
         Me.btnClear.TabIndex = 7
-        Me.btnClear.Text = "Button2"
+        Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(582, 404)
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Arial Black", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(597, 392)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(159, 59)
         Me.btnExit.TabIndex = 8
-        Me.btnExit.Text = "Button3"
+        Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'frmConversion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.NavajoWhite
         Me.ClientSize = New System.Drawing.Size(820, 518)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
