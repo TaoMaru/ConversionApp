@@ -79,6 +79,7 @@ Partial Class frmConversion
         '
         'grpOptions
         '
+        Me.grpOptions.BackColor = System.Drawing.Color.Lavender
         Me.grpOptions.Controls.Add(Me.radToInches)
         Me.grpOptions.Controls.Add(Me.radToMeters)
         Me.grpOptions.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -125,7 +126,7 @@ Partial Class frmConversion
         '
         'btnConvert
         '
-        Me.btnConvert.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnConvert.BackColor = System.Drawing.Color.Lavender
         Me.btnConvert.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConvert.Font = New System.Drawing.Font("Arial Black", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConvert.ForeColor = System.Drawing.Color.Black
@@ -138,7 +139,7 @@ Partial Class frmConversion
         '
         'btnClear
         '
-        Me.btnClear.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnClear.BackColor = System.Drawing.Color.Lavender
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClear.Font = New System.Drawing.Font("Arial Black", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.Black
@@ -151,7 +152,7 @@ Partial Class frmConversion
         '
         'btnExit
         '
-        Me.btnExit.BackColor = System.Drawing.Color.AliceBlue
+        Me.btnExit.BackColor = System.Drawing.Color.Lavender
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Arial Black", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.Black
@@ -164,9 +165,11 @@ Partial Class frmConversion
         '
         'frmConversion
         '
+        Me.AcceptButton = Me.btnConvert
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.NavajoWhite
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(865, 518)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
@@ -178,6 +181,7 @@ Partial Class frmConversion
         Me.Controls.Add(Me.picBuilding)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmConversion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Conversion App"
         CType(Me.picBuilding, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpOptions.ResumeLayout(False)
