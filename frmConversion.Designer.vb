@@ -95,10 +95,10 @@ Partial Class frmConversion
         Me.radToInches.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radToInches.Location = New System.Drawing.Point(39, 79)
         Me.radToInches.Name = "radToInches"
-        Me.radToInches.Size = New System.Drawing.Size(287, 28)
+        Me.radToInches.Size = New System.Drawing.Size(201, 28)
         Me.radToInches.TabIndex = 1
         Me.radToInches.TabStop = True
-        Me.radToInches.Text = "Convert Meters to Inches"
+        Me.radToInches.Text = "Meters to Inches"
         Me.radToInches.UseVisualStyleBackColor = True
         '
         'radToMeters
@@ -107,18 +107,18 @@ Partial Class frmConversion
         Me.radToMeters.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radToMeters.Location = New System.Drawing.Point(39, 45)
         Me.radToMeters.Name = "radToMeters"
-        Me.radToMeters.Size = New System.Drawing.Size(287, 28)
+        Me.radToMeters.Size = New System.Drawing.Size(201, 28)
         Me.radToMeters.TabIndex = 0
         Me.radToMeters.TabStop = True
-        Me.radToMeters.Text = "Convert Inches to Meters"
+        Me.radToMeters.Text = "Inches to Meters"
         Me.radToMeters.UseVisualStyleBackColor = True
         '
         'lblConversion
         '
         Me.lblConversion.Font = New System.Drawing.Font("Gentium Book Basic", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblConversion.Location = New System.Drawing.Point(348, 350)
+        Me.lblConversion.Location = New System.Drawing.Point(348, 329)
         Me.lblConversion.Name = "lblConversion"
-        Me.lblConversion.Size = New System.Drawing.Size(489, 45)
+        Me.lblConversion.Size = New System.Drawing.Size(489, 75)
         Me.lblConversion.TabIndex = 5
         Me.lblConversion.Text = "Conversion:"
         Me.lblConversion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
