@@ -121,7 +121,7 @@ Partial Class frmConversion
         Me.lblConversion.Name = "lblConversion"
         Me.lblConversion.Size = New System.Drawing.Size(612, 45)
         Me.lblConversion.TabIndex = 5
-        Me.lblConversion.Text = "Converted area: "
+        Me.lblConversion.Text = "Conversion:"
         Me.lblConversion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnConvert
