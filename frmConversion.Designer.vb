@@ -66,7 +66,6 @@ Partial Class frmConversion
         Me.txtInput.Name = "txtInput"
         Me.txtInput.Size = New System.Drawing.Size(82, 34)
         Me.txtInput.TabIndex = 2
-        Me.txtInput.Text = "8888"
         '
         'lblInstructions
         '
@@ -117,9 +116,9 @@ Partial Class frmConversion
         'lblConversion
         '
         Me.lblConversion.Font = New System.Drawing.Font("Gentium Book Basic", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblConversion.Location = New System.Drawing.Point(171, 342)
+        Me.lblConversion.Location = New System.Drawing.Point(348, 350)
         Me.lblConversion.Name = "lblConversion"
-        Me.lblConversion.Size = New System.Drawing.Size(612, 45)
+        Me.lblConversion.Size = New System.Drawing.Size(489, 45)
         Me.lblConversion.TabIndex = 5
         Me.lblConversion.Text = "Conversion:"
         Me.lblConversion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -183,7 +182,7 @@ Partial Class frmConversion
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmConversion"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Conversion App"
+        Me.Text = "Building Plans Conversion App"
         CType(Me.picBuilding, System.ComponentModel.ISupportInitialize).EndInit()
         Me.grpOptions.ResumeLayout(False)
         Me.grpOptions.PerformLayout()
